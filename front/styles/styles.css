@@ -1,0 +1,246 @@
+:root {
+    --color-blue: rgba(0, 0, 255, 1);
+    /* Azul */
+    --color-green: rgba(0, 255, 0, 0.7);
+    /* Verde */
+    --color-gray: #333;
+    /* Gris oscuro o negro */
+    --color-grayligth: rgb(166, 166, 166);
+    /* Gris claro */
+    --color-black: #000;
+    /* Gris oscuro o negro */
+    --color-orange: #f39c12;
+    /* Naranja */
+    --color-white: #fff;
+    /* Blanco */
+    --color-icrem: rgba(249, 228, 183);
+    /* Blanco */
+    --color-red: rgba(255, 0, 0, 1);
+    /* Rojo Puro */
+    --color-redligth: rgb(248, 147, 152);
+    /* Rojo Claro */
+
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+    --lgx: 2.8rem;
+    --lgxx: 3.6rem;
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--color-white);
+}
+
+html h1 {
+    font-size: x-large;
+    font-weight: 300;
+}
+
+html h2 {
+    font-size: larger;
+    font-weight: 300;
+}
+
+html h3 {
+    font-size: medium;
+    font-weight: 300;
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+body h3 {
+    color: var(--color-blue);
+    text-align: center;
+    font-size: var(--lg);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+header,
+main .cntd-ppal {
+    color: var(--color-blue);
+    background-color: var(--color-grayligth);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 1rem;
+}
+
+header h1 {
+    color: var(--color-blue);
+    font-size: var(--lgxx);
+    font-weight: 600;
+    margin-top: 0px;
+    text-align: center;
+}
+
+main .cntd a {
+    display: flex;
+
+    color: var(--color-blue);
+    font-size: var(--sm);
+    font-weight: 600;
+    margin-top: 0px;
+    text-align: center;
+}
+
+header img {
+    height: 40px;
+}
+
+header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .company {
+    font-weight: 800;
+}
+
+header .nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .nav-rigth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nav-rigth a {
+    font-weight: 600;
+}
+
+.nav-rigth a:hover {
+    cursor: pointer;
+    border: 1px solid blue;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    scale: (1.3);
+}
+
+.nav-rigth a:active {
+    border: 1px solid black;
+    color: var(--color-black);
+    background-color: var(--color-redligth);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    scale: (1.3);
+}
+
+/* -- Contenedor Principal */
+.cntd-ppal {
+    display: flex;
+    flex-direction: row;
+}
+
+.cntd-ppal {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cntd-ppal h2 {
+    display: flex;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.cntd-ppal a:hover {
+    cursor: pointer;
+    border-left: 2px solid blue;
+    /* border-bottom: 2px solid blue; */
+    border-right: 2px solid blue;
+    height: 2.5rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.cntd-ppal a:active {
+    border: 1px solid black;
+    color: var(--color-black);
+    background-color: var(--color-redligth);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.cntd-trjs {
+    display: flex;
+
+    color: var(--color-blue);
+    background-color: var(--color-grayligth);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 1rem;
+
+    gap: 5rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cntd-trjs-ind{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 46rem;
+    width: 23rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cntd-trjs-ind .trj-title{
+    height: 60px;
+}
+
+.cntd-trjs-ind img{
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cntd-trjs-ind h4{
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+}
+.cntd-trjs-ind h5{
+    font-size:small;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.cntd-trjs-ind h6{
+    font-size:smaller;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#titulo, #calificacion{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+#calificacion{
+    padding-top: 1rem;
+}
