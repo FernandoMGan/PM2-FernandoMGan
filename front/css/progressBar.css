@@ -1,0 +1,77 @@
+/* Estilos de componentes UX/UI ( Barra de Progreso ) */
+html {
+    font-size: 62.5%;
+    background-color: var(--vc-white);
+}
+
+.dvline {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- Funciones propias de la barra -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+.prog-bar-cntd {
+    display: flex;
+
+    position: relative;
+    width: 350px;
+    /* Puedes ajustar el ancho según tus necesidades */
+    height: 3rem;
+    /* Puedes ajustar la altura según tus necesidades */
+    background-color: #ccc;
+    /* Color de fondo del contenedor principal */
+    border: 1px solid green;
+    border-radius: 5px;
+    /* Redondea las esquinas del contenedor principal */
+    padding: 1rem;
+}
+
+.prog-bar-fndo {
+    position: absolute;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    height: 2.5rem;
+    width: 99%;
+    color: black;
+    padding: 0;
+    top: 2px;
+    left: 2px;
+}
+
+.prog-bar-ley {
+    position: absolute;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    height: 2.5rem;
+    width: 99%;
+    color: black;
+    padding: 0;
+    top: 5px;
+    left: 2px;
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.prog-bar-prc {
+    position: absolute;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    height: 2.35rem;
+    /* width: 99%; */
+    color: black;
+    background-color: yellow;
+    padding: 0;
+    top: 2px;
+    left: 2px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- Funciones propias del funcionamiento del progreso -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */

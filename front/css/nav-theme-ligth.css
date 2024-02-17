@@ -1,0 +1,60 @@
+/* Estilos segun tema */
+body h4{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+.container .bg-ligth, .container .bg-darkligth {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    border-radius: 7.5px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left, .nav-middle, .nav-rigth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.bg-darkligth{
+    background-color: lightgray;
+    border: 1px solid blue;
+}
+
+.bg-ligth{
+    background-color: white;
+    /* border: 1px solid green; */
+}
+
+.nav {
+    height: 4rem;
+}
+.nav img{
+    height: 3.5rem;
+}

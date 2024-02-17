@@ -1,0 +1,10 @@
+/* Estilos de componentes UX/UI ( Estilos Generales ) */
+
+html {
+    font-size: 62.5%;
+    background-color: var(--color-white);
+}
+
+header{
+    /* align-items: center; */
+}

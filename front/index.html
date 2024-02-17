@@ -1,57 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles/reset.css">
-  <link rel="stylesheet" href="./styles/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bpo My Pelis - Modularizado</title>
+    <!--  -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/nav-theme-ligth.css" />
+    <link rel="stylesheet" href="./css/progressBar.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/movies.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+
+    <!-- Scripts de bootstrap v5 3 - CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Scripts de bootstrap v5 3 - JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./scripts/index.js" type="module"></script> -->
+    <script src="./public/bundle.js" type="module"></script>
+
 </head>
 
 <body>
-  <h3>Proyecto de M2 - Fernando Martin Gan (Home)</h3>
-  <header>
-    <div class="nav">
-      <div class="nav-left">
-        <img src="./assets/logos/bpo-logo.svg" alt="logo bpo change">
-        <h2 class="company">Bpo Change</h2>
-      </div>
-      <div class="nav-rigth">
-        <h2><a href="./pages/acerca-de.html">Acerca De</a></h2>
-        <h2><a href="./pages/cine-history.html">Historia del cine</a></h2>
-        <h2><a href="./pages/webs-recomendadas.html">Webs Recomendadas</a></h2>
-        <h2><a href="./pages/log-in.html">Loguin</a></h2>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="cntd-ppal btns">
-      <a href="#">
-        <h2 id="titulos">Titulos</h2>
-      </a>
-      <a href="#">
-        <h2 id="peliculas">Peliculas</h2>
-      </a>
-      <a href="#">
-        <h2 id="misPeliculas">Mis Peliculas</h2>
-      </a>
-      <a href="#">
-        <h2 id="recomendadas">Recomendadas</h2>
-      </a>
-    </div>
-    <div class="cntd-trjs">
-      <!-- <div class="cntd-trjs-ind">
-        <div class="trj-ind" id="titulo"><h4>Titulo : </h4></div>
-        <div class="trj-ind" id="imagen"><img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" height="300rem" alt="Imagen de Guardianes de la galaxia"></div>
-        <div class="trj-ind" id="director"><h6>Director : </h6></div>
-        <div class="trj-ind" id="duracion"><h6>Duracion : </h6></div>
-        <div class="trj-ind" id="calificacion"><h5>Calificacion : </h5></div>
-      </div> -->
-    </div>
-  </main>
-  <script src="./scripts/tempData.js"></script>
-  <script src="./scripts/index.js"></script>
+    <h4>Proyecto de M2 - Fernando Martin Gan ( Bpo Change - Pelis Mania - Pelis On Line )</h4>
+    <header class="container bg-darkligth">
+        <div class="nav">
+            <div class="nav-left">
+                <img src="./assets/logos/bpo-logo.svg" alt="logo bpo change" />
+                <h2 class="company">Bpo Change - Pelis</h2>
+            </div>
+            <div class="nav-middle">
+                <div class="dvline">
+                    <div class="prog-bar-cntd hidden" id="prog-bar-cntd">
+                        <div class="prog-bar-fndo" id="prog-bar-fndo"></div>
+                        <div class="prog-bar-prc" id="prog-bar-prc"></div>
+                        <div class="prog-bar-ley" id="prog-bar-ley"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-rigth">
+                <h4><a href="./UAI/ProgressBar/progress-bar.html">Dashboard UAI</a></h4>
+                <h4><a href="./pages/acerca-de.html">Acerca De</a></h4>
+                <h4><a href="./pages/webs-online.html">Webs On Line</a></h4>
+                <h4><a href="./pages/webs-offline.html">Webs Off Line</a></h4>
+                <h4><a href="./pages/log-in.html">Loguin</a></h4>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="container bg-ligth">
+            <!-- <h4 id="tituMarquesina"> Titulera  marquesina </h4> -->
+        </section>
+        <div class="cntd-trjs bg-ligth" id="cntd-trjs-ind">
+            <!-- <div class="cntd-trjs-ind">
+              <div class="trj-ind" id="titulo"><h4>Titulo : </h4></div>
+              <div class="trj-ind" id="imagen"><img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" height="300rem" alt="Imagen de Guardianes de la galaxia"></div>
+              <div class="trj-ind" id="director"><h6>Director : </h6></div>
+              <div class="trj-ind" id="duracion"><h6>Duracion : </h6></div>
+              <div class="trj-ind" id="calificacion"><h5>Calificacion : </h5></div>
+            </div> -->
+          </div>
+      
+
+    </main>
+    <script>
+        const MARVEL_API_KEY = "7e60d1c232326ba44e6a635e0248e747";
+        const MARVEL_PRIVATE_KEY = "y27baed1e902e012968aaa3892be63a1d56ef8585";
+
+        console.log("MARVEL API Key:", MARVEL_API_KEY);
+        console.log("MARVEL Private Key:", MARVEL_PRIVATE_KEY);
+
+        // console.log(progbar.valor);
+    </script>
+    <!-- Registro de punto de acceso -->
 </body>
 
 </html>

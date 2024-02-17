@@ -1,0 +1,4 @@
+git add .
+git commit -m "Presentacion Proyecto"
+git push https://github.com/pi-rym/PM2-FernandoMGan
+git push https://github.com/FernandoMGan/PM2-FernandoMGan.git

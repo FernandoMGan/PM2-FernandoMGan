@@ -1,0 +1,153 @@
+:root {
+    --vc-blue: rgba(0, 0, 255, 1);
+    /* Azul */
+    --vc-green: rgba(0, 255, 0, 0.7);
+    /* Verde */
+    --vc-gray: #333;
+    /* Gris oscuro o negro */
+    --vc-grayligth: rgba(239, 242, 246);
+    /* Gris oscuro o negro */
+    --vc-purplebootstrap: rgba(239, 242, 246);
+    /* Gris claro */
+    --vc-black: #020202;
+    /* Gris oscuro o negro */
+    --vc-orange: #f39c12;
+    /* Naranja */
+    --vc-white: #ffffff;
+    /* Blanco */
+    --vc-icrem: rgba(249, 228, 183);
+    /* Blanco */
+    --vc-red: rgba(255, 0, 0, 1);
+    /* Rojo Puro */
+    --vc-redligth: rgb(248, 147, 152);
+    /* Rojo Claro */
+
+    --vsm: 1.4rem;
+    --vmd: 1.6rem;
+    --vlg: 1.8rem;
+    --vlgx: 2.8rem;
+    --vlgxx: 3.6rem;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--vc-white);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--vc-white);
+    border: 1px solid var(--vc-green);
+    border-radius: 5px;
+    /* Redondea todas las esquinas por defecto */
+    border-top-left-radius: 0;
+    /* Desactiva el redondeo en la esquina inferior izquierda */
+    border-top-right-radius: 0;
+    /* Desactiva el redondeo en la esquina inferior derecha */
+    height: 4rem;
+    margin-top: 0.5rem;
+}
+
+header:hover {
+    /* Agrega un borde espumado */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+}
+
+.brand-name {
+    display: flex;
+    border: 1px solid red;
+}
+.progress{
+    height: 4rem;
+}
+
+.prog-bar-cntd {
+    position: relative;
+    width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+    height: 30px; /* Puedes ajustar la altura según tus necesidades */
+    background-color: #ccc; /* Color de fondo del contenedor principal */
+    border-radius: 5px; /* Redondea las esquinas del contenedor principal */
+  }
+
+  .prog-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  #prog-bar-fdo {
+    background-color: yellow; /* Color de fondo del fondo */
+    width: 100%;
+    z-index: 1;
+  }
+
+  #prog-bar-swd {
+    background-color: transparent; /* Color de fondo transparente */
+    color: white; /* Color del texto blanco */
+    width: 100%;
+    z-index: 2;
+  }
+
+  #prog-bar-prc {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
+    width: 50%; /* Puedes ajustar el ancho inicial según tus necesidades */
+    z-index: 3;
+  }
+  .barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+  .prog-bar-cntd {
+    position: relative;
+    width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+    height: 30px; /* Puedes ajustar la altura según tus necesidades */
+    background-color: #ccc; /* Color de fondo del contenedor principal */
+    border-radius: 5px; /* Redondea las esquinas del contenedor principal */
+  }
+
+  .prog-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  #prog-bar-fdo {
+    background-color: yellow; /* Color de fondo del fondo */
+    width: 100%;
+    z-index: 1;
+  }
+
+  #prog-bar-swd {
+    background-color: transparent; /* Color de fondo transparente */
+    color: white; /* Color del texto blanco */
+    width: 100%;
+    z-index: 2;
+  }
+
+  #prog-bar-prc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
+    width: 100%; /* Puedes ajustar el ancho inicial según tus necesidades */
+    z-index: 3;
+  }

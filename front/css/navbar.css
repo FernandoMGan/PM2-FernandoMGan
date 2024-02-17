@@ -1,0 +1,50 @@
+
+
+header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .company {
+    font-weight: 800;
+}
+
+header .nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .nav-rigth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nav-rigth a {
+    font-weight: 600;
+}
+
+.nav-rigth a:hover {
+    cursor: pointer;
+    border: 1px solid blue;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    scale: (1.3);
+}
+
+.nav-rigth a:active {
+    border: 1px solid black;
+    color: var(--color-black);
+    background-color: var(--color-redligth);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    scale: (1.3);
+}
+

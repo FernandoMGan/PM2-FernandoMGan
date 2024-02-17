@@ -1,0 +1,40 @@
+/* Estilos de componentes UX/UI ( Estilos Generales ) */
+:root {
+    --color-blue: rgba(0, 0, 255, 1);
+    /* Azul */
+    --color-green: rgba(0, 255, 0, 0.7);
+    /* Verde */
+    --color-gray: #333;
+    /* Gris oscuro o negro */
+    --color-grayligth: rgb(166, 166, 166);
+    /* Gris claro */
+    --color-black: #000;
+    /* Gris oscuro o negro */
+    --color-orange: #f39c12;
+    /* Naranja */
+    --color-white: #fff;
+    /* Blanco */
+    --color-icrem: rgba(249, 228, 183);
+    /* Blanco */
+    --color-red: rgba(255, 0, 0, 1);
+    /* Rojo Puro */
+    --color-redligth: rgb(248, 147, 152);
+    /* Rojo Claro */
+
+    --vsm: 1.4rem;
+    --vmd: 1.6rem;
+    --vlg: 1.8rem;
+    --vlgx: 2.8rem;
+    --vlgxx: 3.6rem;
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilos fuera del nav */
+main{
+    margin-top: 1rem;
+}
