@@ -1,3 +1,6 @@
+# scripts propios de la pagina
+scripts/
+
 # Logs
 logs
 *.log
