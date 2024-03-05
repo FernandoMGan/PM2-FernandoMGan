@@ -1,0 +1,5 @@
+[
+    {"LoginName": "fmgsch",  "Password":"7e4821aa84f3387884d6c38544ddb9603592e1229235627bf46d8ef666d66d060e710ce059d63ab281170bb7daf42b88b0cfe983de635f6c40ee4980fd498c82", "UserName":"Fernando Gan", "Email":"fmgsch@gmail.com", "2FA":"5492975213076", "RegC":"3/3/2024", "RegU":null, "RegS":1},
+    {"LoginName": "grivpdl", "Password":"53c08c5e90af9bfa55d77bd92d4d23ad83ee80b83366f15701ca4463a421528e01b2835c0d82d9f73427631ba72a92722e17041f8dbf94e8c3f8eda316cff2f5", "UserName":"Griselda Ponce De Leon", "Email":"grise979@gmail.com", "2FA":"5492975070543", "RegC":"3/3/2024", "RegU":null, "RegS":1},
+    {"LoginName": "testing", "Password":"881c7d6ba98678bcd96e253086c4048c3ea15306d0d13ff48341c6285ee71102a47b6f16e20e4d65c0c3d677be689dfda6d326695609cbadfafa1800e9eb7fc1", "UserName":"Usuario de testeo", "Email":"fmgsch@gmail.com", "2FA":"5492975213076", "RegC":"3/3/2024", "RegU":null, "RegS":1}
+]

@@ -45,11 +45,13 @@ class RepoMovies {
         }
     }
     limpiarTarjetas(){
+        console.log(this.movies.length);
         if (this.movies.length == 0 ) {return};
         const contenedorTarjetas = document.querySelector(".cntd-trjs");
         contenedorTarjetas.innerHTML = ""; // Vacía el contenido del contenedor
         repositorio.setCleanMovies();
         trjCargadas = 0;
+        console.log(this.movies.length);
     };
 }
 

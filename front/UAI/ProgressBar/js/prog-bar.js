@@ -1,7 +1,6 @@
 //  Rutinas y Funciones de componentes UX/UI ( Barra de Progreso )
 document.addEventListener("DOMContentLoaded", function () {
     var btnPrc = document.getElementById("btn-prc");
-    var btnPrc100 = document.getElementById("btn-prc100");
     var btnPrc1000 = document.getElementById("btn-prc1000");
 
     btnPrc.addEventListener("click", function (event) {
@@ -10,16 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // console.log(valPos);
         BarraProgresoSetting(1, 100, valPos, 'Carga de Testeo');
         BarraProgresoReflejo(valPos);
-    });
-
-    btnPrc100.addEventListener("click", function (event) {
-        event.preventDefault(); // Previene la acción por defecto del enlace
-        var valPos = document.getElementById('prc-value').value;
-        BarraProgresoSetting(1, 100, valPos, 'Carga de Testeo');
-        for (let index = valPos; index <= TstBarraProgreso.maximo; index++) {
-            // console.log(`Dentro del for en 100 :> ${index}`);
-            setTimeout(function() {BarraProgresoReflejo(index)},5000);
-        }
     });
 
     btnPrc1000.addEventListener("click", function (event) {

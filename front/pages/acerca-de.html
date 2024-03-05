@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acerca de Bpo My Pelis</title>
+  <title>Acerca de Bpo Pelis Pedia</title>
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/nav-theme-ligth.css" />
   <link rel="stylesheet" href="../css/progressBar.css" />
   <link rel="stylesheet" href="../css/index.css" />
   <link rel="stylesheet" href="../css/styles.css" />
+
+  <link rel="stylesheet" href="../css/styles-pages-int.css" />
 
 
   <!-- Scripts de bootstrap v5 3 - CSS -->
@@ -21,22 +23,107 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-</head>
+    <!-- Scripts de bootstrap v5 3 - JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- Scripts de bootstrap v5 3 - Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- <script src="../scripts/index-abaut.js" type="module"></script> -->
+    <script src="../scripts/index-abaut.js" type="module"></script></head>
 
 <body>
-  <h3>Proyecto de M2 - Fernando Martin Gan ( Acerca de Bpo My Pelis )</h3>
+  <h3>Proyecto de M2 - Fernando Martin Gan ( Acerca de Bpo Pelis Pedia )</h3>
   <header class="container MT-2">
     <div class="nav">
       <div class="nav-left">
         <img src="../assets/logos/bpo-logo.svg" alt="logo bpo change">
-        <h2 class="company">Bpo Change</h2>
+        <h2 class="company">Bpo Change - Pelis Pedia</h2>
       </div>
       <div class="nav-rigth">
+        <h2><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal"> Contacto</a></h2>
         <h2><a href="../index.html">Home</a></h2>
       </div>
     </div>
   </header>
 
+  <main class="container">
+    <section class="txt-center">
+      <br><br><br><hr>
+      <h1>Acerca de Pelis Media</h1>
+      <h3>
+        <p>Bienvenido a Pelis Media, tu destino definitivo para descubrir y disfrutar de las últimas películas y programas
+          de televisión. En Pelis Media, nos apasiona el cine y estamos comprometidos a brindarte la mejor experiencia
+          cinematográfica.</p>
+        <p>¡Explora nuestro catálogo de películas, encuentra tus favoritas y sumérgete en el mundo del entretenimiento!
+        </p>
+      </h3>
+    </section>
+    <section class="developer txt-center">
+      <br><br><br><hr>
+      <h2>Sobre el Desarrollador</h2>
+      <h4>
+        <div class="developer-info">
+          <img src="../assets/persons/prs-001.jpeg" id="f4x4" alt="Foto de Fernando Martin Gan">
+          <div class="developer-details">
+            <h3>Fernando Martin Gan</h3>
+            <p>¡Hola! Soy Fernando, un apasionado desarrollador Full Stack con experiencia en la creación de sitios web y
+              aplicaciones web increíbles. En Pelis Media, me enorgullece trabajar en el desarrollo de características
+              emocionantes y en garantizar una experiencia fluida para nuestros usuarios.</p>
+          </div>
+        </div>
+      </h4>
+    </section>
+  </main>
+    <!--                            Inicio del formulario Modal                        -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Formulario de Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="../assets/persons/prs-001.jpeg" alt="Foto de contacto" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <form>
+                  <!-- Aquí van los campos del formulario -->
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <!-- Otros campos del formulario -->
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--                            Fin del formulario Modal                        -->
+
+  <footer>
+    <!-- Aquí podrías agregar información de contacto o enlaces a redes sociales -->
+    <br><br><br><hr>
+    <p>&copy; 2024 Pelis Media. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Agrega aquí tus enlaces a archivos JavaScript -->
+  <script>
+    lsp();
+  </script>
 </body>
 
 </html>

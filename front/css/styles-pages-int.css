@@ -1,0 +1,36 @@
+html h1,
+html h2 {
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.developer-details h3{
+    font-size: x-large;
+    font-weight: 300;
+
+    color: black;
+    padding-top: 2rem;
+}
+
+.developer-info p, .container p{
+    font-size: large;
+    font-weight: 300;
+
+    color: black;
+    padding-top: 2rem;
+}
+#f4x4 {
+    height: 40%;
+    width: 40%;
+}
+
+footer{
+    text-align: right;
+}
+#nombre, #email{
+    color: black !important;
+}

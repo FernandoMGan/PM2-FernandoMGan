@@ -1,0 +1,6 @@
+[
+{"state": "Activo", "Observation": "Mantienes el estado tal como está"},
+{"state": "Inactivo", "Observation": "Cuando el usuario o cliente no ha realizado ninguna acción durante un período de tiempo determinado, pero aún puede volver a activarse sin perder datos"},
+{"state": "Eliminado", "Observation": "El usuario o cliente ha sido eliminado permanentemente l sistema y no se puede recuperar"},	
+{"state": "Prospecto", "Observation": "Este estado se puede usar para usuarios o clientes potenciales que están en proceso de ser activados o convertidos en usuarios activos"}
+]
