@@ -1,0 +1,155 @@
+Te paso mis archivos de mi back y los datos de Mi movie.js deberian estar cargandose desde una base de mongodb con la conexion dbCon
+
+
+
+-------------------------------------------------------
+Mi index.js
+
+require('dotenv').config('./.env');
+
+const app = require('./src/server');
+const dbCon = require('./src/config/dbCon');
+
+
+dbCon().then(
+    res => {
+        app.listen(process.env.APP_PORT, () => {
+            console.log(`Servidor escuchando en el puerto :>> ${process.env.APP_PORT}, Base Conectada con Mongo DB en Uri :>> `, process.env.MONGO_URI );
+        });
+    }
+)
+// Ruta => Controlador => Servicios =>
+//                     => Manejo de errores
+
+-------------------------------------------------------
+Mi server.js
+
+const express = require("express");
+const router = require("./routes/index.js");
+const morgan = require("morgan");
+const cors = require("cors");
+
+const app = express();
+
+// Pasando solicitud por el midelware de morgan
+app.use(morgan("dev"));     // Registro dev
+app.use(cors());            // Se abre para recibir conexiones
+app.use(express.json());    // Convierte json a Java scripts
+
+// Middelware propio
+app.use((req,res,next)=> {
+    console.log('Estamos pasando por mi propio middelware ');
+    next();
+});
+
+app.use(router);
+
+module.exports = app ;
+
+-------------------------------------------------------
+Mi routesIndex.js
+
+------------------// Aqui vamos a definir las rutas a traves
+
+// Tengo definida la solicitud a GET /users => controlador
+
+const { Router } = require('express');
+const { hellowWorldController, usersController, clientsController, suppliersController, 
+    itemsController, depositsController } = require('../controllers/index.js')
+const { getAllMovies } = require('../controllers/moviesController.js');
+const { getMovies } = require('../services/moviesServices.js');
+
+const router = Router();
+
+// Users, Clients, Suppliers, Items, Deposits,
+
+router.get('/', hellowWorldController);
+
+router.get('/users', usersController);
+
+router.get('/clients', clientsController);
+
+router.get('/suppliers', suppliersController);
+
+router.get('/items', itemsController);
+
+router.get('/deposits', depositsController);
+
+// Routas para Bpo mis pelis
+
+router.get('/movies', getMovies);
+
+module.exports = router;
+-------------------------------------
+
+-------------------------------------------------------
+Mi movieController.js
+
+// Importa el módulo `moviesService.js`
+const moviesService = require('../services/moviesServices.js');
+
+const getAllMovies = async (req, res) => {
+    try {
+        const movies = await moviesService.getAllMovies();
+        res.json(movies);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+module.exports = { getAllMovies };
+-------------------------------------------------------
+Mi movieServices.js
+
+const Movie = require('../models/Movie.js');
+
+module.exports = {
+    getMovies: async () => {
+        const movies = await Movie.find();
+        return movies;
+    },
+    createMovie: async (movieData) => {
+        const newMovie = new Movie(movieData);
+        await newMovie.save();
+        return newMovie;
+    },
+};
+
+-------------------------------------------------------
+Mi movie.js
+
+module.exports = [
+    {
+        title: "Fernando Homework de Henry",
+        year: 2017,
+        director: "James Gunn",
+        duration: "2h 16min",
+        genre: ["Action", "Adventure", "Comedy"],
+        rate: 7.7,
+        poster:
+            "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg",
+    },
+    {
+        title: "Star Wars: Episode IV - A New Hope",
+        year: 1977,
+        director: "George Lucas",
+        duration: "2h 1min",
+        genre: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
+        rate: 8.7,
+        poster:
+            "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg",
+    },
+];
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------

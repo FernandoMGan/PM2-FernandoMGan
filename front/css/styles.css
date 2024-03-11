@@ -268,3 +268,12 @@ header .nav-rigth {
 a {
     text-decoration: none !important;
 }
+
+.form-label{
+    font-weight: 900;
+    color: #f39c12;
+}
+.text{
+    font-weight: 600;
+    color: black;
+}

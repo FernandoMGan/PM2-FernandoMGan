@@ -5,7 +5,7 @@
 const { Router } = require('express');
 const { hellowWorldController, usersController, clientsController, suppliersController, 
     itemsController, depositsController } = require('../controllers/index.js')
-const { moviesController } = require('../controllers/moviesController.js');
+const { getMovies, addMovie } = require('../controllers/moviesController.js');
 
 const router = Router();
 
@@ -25,6 +25,7 @@ router.get('/deposits', depositsController);
 
 // Routas para Bpo mis pelis
 
-router.get('/movies', moviesController);
+router.get('/movies', getMovies);
+router.put('/movies', addMovie);
 
 module.exports = router;

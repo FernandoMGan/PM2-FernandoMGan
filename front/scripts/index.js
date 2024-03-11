@@ -157,7 +157,8 @@ function CreateDivs(pelicula) {
     const rate = document.createElement("div");
     rate.classList.add("trj-ind");
     rate.classList.add("trj-ind-Rate");
-    rate.innerHTML = `<h3>${pelicula.rate}</h3>`;
+    const rateValue = parseFloat(pelicula.rate.$numberDecimal); // Convertir a número
+    rate.innerHTML = `<h3>${rateValue}</h3>`;
     cntdFlexRate.appendChild(rate);
 
     // Agregar el contenedor flex para la calificación a la tarjeta

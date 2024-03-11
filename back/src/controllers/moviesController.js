@@ -1,11 +1,25 @@
 // Importa el módulo `moviesService.js`
 const moviesService = require('../services/moviesServices.js');
 
-// Define el controlador moviesController
-const moviesController = async (req, res) => {
-    // Redirige a la raíz de la aplicación
-    res.json(moviesService);
+const getMovies = async (req, res) => {
+    try {
+        const movies = await moviesService.getMovies();
+        res.json(movies);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 };
 
-// Exporta el controlador
-module.exports = { moviesController };
+const addMovie = async (req, res) => {
+    try {
+        const { title, year, director, duration, genre, rate, poster } = req.body;
+        console.log('Body contiene :>> ',req.body);
+        const newMovie = await moviesService.addMovie({ title, year, director, duration, genre, rate, poster });
+        res.status(201).json(newMovie);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+
+module.exports = { getMovies, addMovie };

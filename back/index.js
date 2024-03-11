@@ -1,13 +1,13 @@
+require('dotenv').config();
+
 const app = require('./src/server');
 const dbCon = require('./src/config/dbCon');
 
+
 dbCon().then(
     res => {
-        app.listen(3000, () => {
-            console.log('Servidor escuchando en el puerto 3000');
-            console.log('Hola Mundo - En tu cara ::>> 18-40');
+        app.listen(process.env.APP_PORT, () => {
+            console.log(`Servidor escuchando en el puerto :>> ${process.env.APP_PORT}, Base Conectada con Mongo DB en Uri :>> `, process.env.BD_URI);
         });
     }
-)
-// Ruta => Controlador => Servicios =>
-//                     => Manejo de errores
+);
