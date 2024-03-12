@@ -1,11 +1,14 @@
 {
-  "name": "challenge-testing",
+  "name": "chalenge-testing",
   "version": "1.0.0",
-  "description": "Testing",
-  "main": "test.js",
+  "description": "Homework de Jest",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "author": "Fernando Martin Gan - fmg@bpochange.com.ar",
-  "license": "ISC"
+  "author": "Fernando Martin Gan",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
 }
