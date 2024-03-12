@@ -1,10 +1,12 @@
 class Producto {
+  // Clase para Constructor para carrito de compra
   constructor({ nombre, cantidad, precio, porcentaje }) {
     nombre, cantidad, precio, porcentaje;
   }
 }
 
 class CarritoCompra {
+  // Constructor para carrito de compra
   constructor() {
     this.carrito = [];
   }

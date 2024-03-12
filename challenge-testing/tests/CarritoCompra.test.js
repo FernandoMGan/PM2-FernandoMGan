@@ -1,30 +1,30 @@
 const CarritoCompra = require("../index");
 
-describe("La clase CarritoCompra", () => {
-  it("CarritoCompra debe ser una clase", () => {
+describe("Clase CarritoCompra", () => {
+  it("CarritoCompra tiene que ser una clase", () => {
     expect(typeof CarritoCompra).toBe("function");
   });
 
-  it("CarritoCompra tiene un método constructor", () => {
+  it("CarritoCompra tiene método constructor", () => {
     expect(CarritoCompra.prototype.hasOwnProperty("constructor")).toBe(true);
   });
 
-  it("CarritoCompra me tiene que devolver un array", () => {
+  it("Debe tener implementado método calcularTotal(): ()", () => {
+    const newCarritoCompra = new CarritoCompra();
+    expect(newCarritoCompra.calcularTotal).toBeDefined();
+  });
+  
+  it("CarritoCompra tiene que devolver un array", () => {
     const newCarritoCompra = new CarritoCompra();
     expect(Array.isArray(newCarritoCompra.carrito)).toBe(true);
   });
 
-  it("Debe tener implementado el método agregarProducto()", () => {
+  it("Debe tener método agregarProducto()", () => {
     const newCarritoCompra = new CarritoCompra();
     expect(newCarritoCompra.agregarProducto).toBeDefined();
   });
 
-  it("Debe tener implementado el método	calcularTotal(): ()", () => {
-    const newCarritoCompra = new CarritoCompra();
-    expect(newCarritoCompra.calcularTotal).toBeDefined();
-  });
-
-  it("Debe tener implementado el método	aplicarDescuento(): ()", () => {
+  it("Debe tener método	aplicarDescuento(): ()", () => {
     const newCarritoCompra = new CarritoCompra();
     expect(newCarritoCompra.aplicarDescuento).toBeDefined();
   });
