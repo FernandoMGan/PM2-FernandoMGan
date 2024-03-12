@@ -45,6 +45,7 @@ const depositsController = (req, res) => {
 
 // Index para Movies Pelis
 const moviesController = (req, res) => {
+    console.log('Pasando por movies controler');
     res
         .status(200)
         .send('Lista de peliculas para Bpo mis pelis');

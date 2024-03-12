@@ -1,0 +1,83 @@
+L01 - Proyecto Full Stack
+[REQUISITOS]:
+El repositorio debe estar clonado y listo para iniciar el desarrollo del proyecto.
+Debe completarse el diseño de la página index (home).
+Debe mapearse la información de películas de ejemplo que está contenida en el proyecto para renderizar tarjetas.
+
+
+L02 - AJAX
+[REQUISITOS]:
+Debe estar implementada una función que realice correctamente una solicitud HTTP con el método GET a la URL indicada, utilizando el método “get” de JQuery.
+Debe poder mapear y renderizar las tarjetas de la misma manera en que lo hacía anteriormente con el arreglo escrito “a mano”.
+
+
+L03 - Frameworks CSS
+[REQUISITOS]:
+Haber vinculado correctamente a Bootstrap con el proyecto a través de su CDN.
+Haber aplicado estilos que ofrece el Framework a los elementos del proyecto.
+
+
+L04 - Node
+[REQUISITOS]:
+Haber instalado y configurado Webpack correctamente en el proyecto de Frontend. 
+Haber vinculado correctamente el módulo que Webpack nos entrega como output.
+
+
+L05 - Testing Advanced
+[REQUISITOS]:
+Haber implementado correctamente los tests que creas necesarios a partir del enunciado de CarritoCompra
+Haber implementado correctamente la clase CarritoCompra de manera tal que cumpla con lo requerido por el enunciado y satisfaga los criterios de los tests. 
+
+
+L06 - Asincronismo
+[REQUISITOS]:
+Al finalizar la actividad, debe poder realizarse la solicitud HTTP GET a la URL de películas utilizando la librería axios.
+Debe haberse implementado alguna de las dos estrategias de manejo de la asincronía: Promesa o Async/Await.
+Este cambio no debería modificar el funcionamiento de la página. En el navegador el resultado debe ser el mismo. 
+
+
+L07 - Express
+[REQUISITOS]:
+Debe haberse creado el servidor HTTP en el entorno local.
+El servidor debe poder ejecutarse y recibir solicitudes a través de un puerto del entorno local.
+El servidor debe poder recibir una solicitud GET /movies y responder al cliente con un mensaje adecuado.
+
+
+L08 - Express II
+[REQUISITOS]:
+El servidor debe poder recibir una solicitud GET /movies y responder al cliente con un arreglo de objetos película.
+
+
+L09 - Database Fundamentals
+[REQUISITOS]: Sin requisitos
+...
+...
+
+
+L10 - MongoDB
+[REQUISITOS]:
+Tener creado el cluster de datos en la plataforma de MongoDB Atlas.
+Tener creada la colección “movies” en el cluster.
+Haber insertado correctamente los 3 documentos de las películas que trabajábamos en el arreglo.
+
+
+L11 - Mongoose
+No tiene apartado de Requisitos, Las dos actividades que tiene: 
+ACTIVIDAD 01
+Instalar mongoose en nuestro proyecto de backend.
+Realizar en el módulo correspondiente la conexión a la base de datos de nuestro cluster en MongoDB Atlas. Utilizare para esto la URI de conexión que nos provee la plataforma.
+
+ACTIVIDAD 02
+Implementar el Schema de movie. Utilizar los tipos de datos adecuados para cada propiedad del schema.
+Utilizando el Schema creado anteriormente, definir el modelo Movie y exportarlo.
+Requerir en el módulo de servicio de movies al modelo Movie y utilizar el método find para obtener las películas en el lugar adecuado, de manera tal que ahora la respuesta al controlador vaya con los datos “reales de la base de datos”.
+
+
+
+L12, L13, L14 - Mongoose II, Backend Avanzado, JavaScript Avanzado
+[REQUISITOS]:
+Haber creado una vista de formulario con un input para cada uno de los datos de la película a crear.
+Haber implementado correctamente la función de servicio, controlador y endpoint para la creación de películas en la aplicación de backend.
+Realizar correctamente la petición correspondiente al enviar el formulario de creación de películas.
+
+
