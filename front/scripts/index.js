@@ -9,7 +9,6 @@ const progBarDraw = document.getElementById('prog-bar-cntd');
 progBarDraw.classList.remove('hidden');
 
 getFakeStoreProducts().then(dbPeliculas => {
-    // console.log('Get Fake Index');
     const ProgBarRef = {
         "progBarCntd": document.getElementById('prog-bar-cntd'),
         "progBarFndo": document.getElementById('prog-bar-fndo'),
@@ -42,7 +41,8 @@ function bucle(index, dbPeliculas, progbar, progBarDraw) {
     if (index < dbPeliculas.length) {
         const movieData = dbPeliculas[index];
 
-        console.log(`Mostrar Peli posicion ${index} , con Titulo ${dbPeliculas[index].title} y con Ratio ${dbPeliculas[index].rate}`);
+        // alert('Get Fake Index id  ' + dbPeliculas[index]._id);
+        // console.log(`Mostrar Peli posicion ${index} , con Titulo ${dbPeliculas[index].title} y con Ratio ${dbPeliculas[index].rate}`);
 
         // repMovies.createMovie(movieData);
         CreateDivs(movieData);
@@ -76,10 +76,12 @@ function CreateDivs(pelicula) {
             corazon.classList.remove("bi-heart-fill");
             corazon.classList.add("bi-heart");
             corazon.setAttribute("data-favorito", "false");
+            favHeartToggle(Event, false);
         } else {
             corazon.classList.remove("bi-heart");
             corazon.classList.add("bi-heart-fill");
             corazon.setAttribute("data-favorito", "true");
+            favHeartToggle(Event, true);
         }
     });
     contenedorTituloYFavorito.appendChild(corazon);
@@ -167,4 +169,8 @@ function CreateDivs(pelicula) {
 
     // Agregar la tarjeta al contenedor de tarjetas
     contenedorTarjetas.appendChild(tarjeta);
+}
+
+function favHeartToggle(event,vdada, vflag) {
+    console.log('Event :>> en Flag :>> ', vflag + ' \n La data :>> ' + vdada + ' \n La bandera' + event );
 }
